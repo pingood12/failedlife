@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Headings</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script>
+      $(function () {
+        $(".draggable").draggable();
+      });
+      $(function () {
+        $(".draggableText").draggable({ handle: "#handle" });
+      });
+    </script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .backGif {
+        margin: 0;
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!--배경 gif 설정 시작-->
+    <!-- <div class="backGif" style="background-image: url('images/gif02.gif'); background-size:cover; margin:0%; padding: 0%; display: inline-block;">
+  </div> -->
+    <!--배경 gif 설정 끝-->
+    <div
+      class="backGif"
+      style="
+        background-image: url('images/image13.jpg');
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        display: inline-block;
+      "
+    >
+      <h1
+        style="
+          color: rgb(236, 248, 206);
+          margin-top: 200px;
+          font-size: 500%;
+          text-align: center;
+        "
+      >
+        증명되지 못한 것의 외곽선
+      </h1>
+      <h6
+        style="
+          color: rgba(237, 243, 222, 0.5);
+          margin-top: 100px;
+          font-size: 100%;
+          text-align: center;
+        "
+      >
+        연관성없이 길게 나열되는 사진과 드로잉은 드라이브 구석진 곳을 떠도는
+        이미지들을 발굴한 것이다
+      </h6>
+      <h6
+        style="
+          color: rgba(237, 243, 222, 0.5);
+          margin-top: 10px;
+          font-size: 100%;
+          text-align: center;
+        "
+      >
+        목적도 대상도 불분명한 순간의 기록은 실패로 분류되어 폐기되기 직전에
+        놓여있었다
+      </h6>
+      <h6
+        style="
+          color: rgba(237, 243, 222, 0.5);
+          margin-top: 10px;
+          font-size: 100%;
+          text-align: center;
+        "
+      >
+        무엇도 아닌 것들 사이에 시시포스 신화를 차용한 이미지를 끼워놓고 이름을
+        붙여보았다
+      </h6>
+      <h6
+        style="
+          color: rgba(237, 243, 222, 0.5);
+          margin-top: 10px;
+          font-size: 100%;
+          text-align: center;
+        "
+      >
+        형체를 알 수도 없을만큼 거대한 것을 밀어올리는 순간에 영원히 갇히게 되는
+        형벌과 지워진 것들은
+      </h6>
+      <h6
+        style="
+          color: rgba(237, 243, 222, 0.5);
+          margin-top: 10px;
+          font-size: 100%;
+          text-align: center;
+        "
+      >
+        반복되는 증명에서 탈락되어 존재의 뒷편에 밀려난 삶과 예술들을 닮아있다
+      </h6>
+      <h6
+        style="
+          color: rgba(237, 243, 222, 0.5);
+          margin-top: 70px;
+          margin-right: 500px;
+          font-size: 100%;
+          text-align: right;
+        "
+      >
+        박민경 / 2020
+      </h6>
+
+      <div style="visibility: hidden; display: inline-block">
+        <p><img src="images/image11.jpg" width="800" height="400" /></p>
+      </div>
+
+      <!--첫번째 단락 시작-->
+      <!--택스트 박스 시작-->
+      <div
+        style="display: inline-block; height: 1000px"
+        class="draggableText"
+        class="ui-widget-content"
+      >
+        <p
+          id="handle"
+          style="
+            font-size: 20pt;
+            position: relative;
+            left: 600px;
+            width: 300px;
+            height: 50px;
+            background-color: rgba(211, 211, 211, 0.479);
+            cursor: pointer;
+            text-align: center;
+          "
+        >
+          아무것도 없는 것을 향해
+        </p>
+        <p>
+          <textarea
+            rows="10"
+            cols="20"
+            style="
+              font-size: 20pt;
+              position: relative;
+              left: 600px;
+              top: 0px;
+              width: 300px;
+              height: 400px;
+              margin: 0px;
+            "
+          ></textarea>
+        </p>
+        <p
+          style="display: block"
+          class="draggable"
+          class="ui-widget-content"
+          style="align-content: center"
+        >
+          <img
+            src="images/png06.png"
+            style="
+              position: relative;
+              left: 300px;
+              top: 0px;
+              width: 1200px;
+              height: 1000px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <!--택스트 박스 끝-->
+
+      <!--드래그 할 수있는 이미지 시작 -->
+      <div>
+        <p
+          style="display: inline-block"
+          class="draggable"
+          class="ui-widget-content"
+          style="align-content: center"
+        >
+          <img
+            src="images/image11.jpg"
+            style="
+              position: relative;
+              left: 20px;
+              top: 0px;
+              width: 600px;
+              height: 800px;
+              margin: 0px;
+            "
+          />
+        </p>
+
+        <p
+          style="display: block"
+          class="draggable"
+          class="ui-widget-content"
+          style="align-content: center"
+        >
+          <img
+            src="images/image12.jpg"
+            style="
+              position: relative;
+              left: 650px;
+              top: 0px;
+              width: 800px;
+              height: 600px;
+              margin: 0px;
+            "
+          />
+        </p>
+
+        <p
+          style="display: block"
+          class="draggable"
+          class="ui-widget-content"
+          style="align-content: center"
+        >
+          <img
+            src="images/png02.png"
+            style="
+              position: relative;
+              left: 300px;
+              top: 0px;
+              width: 1200px;
+              height: 1000px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image14.jpg"
+            style="
+              position: relative;
+              left: 500px;
+              top: 0px;
+              width: 1200px;
+              height: 900px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+
+      <!--드래그 할 수있는 이미지 끝-->
+      <!--드래그 할 수 있는 비디오 시작-->
+      <div style="height: 900px" class="draggable" class="ui-widget-content">
+        <p>
+          <video
+            style="
+              position: relative;
+              left: 1000px;
+              top: 0px;
+              width: 800;
+              height: 600;
+              margin: 0px;
+            "
+            autoplay
+            loop
+            muted
+          >
+            <source src="videos/video01.mp4" type="video/mp4" />
+          </video>
+        </p>
+      </div>
+      <!--드래그 할 수 있는 비디오 끝-->
+    </div>
+
+    <!--두번째 단락 시작-->
+    <div
+      class="backGif"
+      style="
+        background-image: url('images/gif04.gif');
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        display: inline-block;
+      "
+    >
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image20.jpg"
+            style="
+              position: relative;
+              left: 1000px;
+              top: 0px;
+              width: 300px;
+              height: 500px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="height: 900px"
+        class="draggable"
+        class="ui-widget-content"
+        style="text-align: right"
+      >
+        <p>
+          <video
+            style="
+              position: relative;
+              left: 800px;
+              margin: 10px;
+              width: 800px;
+              height: 1600px;
+            "
+            autoplay
+            loop
+            muted
+          >
+            <source src="videos/video02.mp4" type="video/mp4" />
+          </video>
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image21.jpg"
+            style="
+              position: relative;
+              left: 80px;
+              top: 0px;
+              width: 300px;
+              height: 500px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+    </div>
+    <div
+      class="backGif"
+      style="
+        background-image: url('images/image24.jpg');
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+        display: inline-block;
+      "
+    >
+      <h6
+        style="
+          color: rgba(244, 245, 243, 0.5);
+          margin-top: 70px;
+          margin-left: 100px;
+          font-size: 200%;
+          text-align: left;
+        "
+      >
+        순간의 존재
+      </h6>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image22.jpg"
+            style="
+              position: relative;
+              left: 1000px;
+              top: 0px;
+              width: 300px;
+              height: 500px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image23.jpg"
+            style="
+              position: relative;
+              left: 20px;
+              top: 0px;
+              width: 500px;
+              height: 400px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image24.jpg"
+            style="
+              position: relative;
+              left: 800px;
+              top: 0px;
+              width: 500px;
+              height: 900px;
+              margin: 10px;
+            "
+          />
+        </p>
+
+        <p>
+          <img
+            src="images/png01.png"
+            style="
+              position: relative;
+              left: 130px;
+              top: 0px;
+              width: 1200px;
+              height: 900px;
+              margin-top: 100px;
+            "
+          />
+        </p>
+      </div>
+    </div>
+    <!--3번째 단락 시작-->
+
+    <div
+      class="backGif"
+      style="
+        background-image: url('images/image36.png');
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+        display: inline-block;
+      "
+    >
+      <h6
+        style="
+          color: rgba(244, 245, 243, 0.5);
+          margin-top: 70px;
+          margin-right: 100px;
+          font-size: 200%;
+          text-align: right;
+        "
+      >
+        실패한 시도들
+      </h6>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/png12.png"
+            style="
+              position: relative;
+              left: 100px;
+              top: 0px;
+              width: 1200px;
+              height: 1200px;
+              margin-top: 0px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image32.jpg"
+            style="
+              position: relative;
+              left: 20px;
+              top: 0px;
+              width: 700px;
+              height: 700px;
+              margin-top: 0px;
+            "
+          />
+        </p>
+      </div>
+
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image34.jpg"
+            style="
+              position: relative;
+              left: 400px;
+              top: 0px;
+              width: 300px;
+              height: 500px;
+              margin: 10px;
+            "
+          />
+        </p>
+
+        <p>
+          <img
+            src="images/image34.jpg"
+            style="
+              position: relative;
+              left: 500px;
+              top: 500px;
+              width: 300px;
+              height: 500px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/png03.png"
+            style="
+              position: relative;
+              left: 80px;
+              top: 0px;
+              width: 1300px;
+              height: 1100px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image33.jpg"
+            style="
+              position: relative;
+              left: 100px;
+              top: 0px;
+              width: 400px;
+              height: 1000px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+    </div>
+
+    <!--4번째 단락 시작-->
+    <div
+      class="backGif"
+      style="
+        background-image: url('images/gif03.gif');
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+        display: inline-block;
+      "
+    >
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image41.jpg"
+            style="
+              position: relative;
+              left: 200px;
+              top: 0px;
+              width: 300px;
+              height: 500px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/png09.png"
+            style="
+              position: relative;
+              left: 300px;
+              top: 0px;
+              width: 500px;
+              height: 500px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image43.jpg"
+            style="
+              position: relative;
+              left: 450px;
+              top: 100px;
+              width: 1200px;
+              height: 800px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image44.jpg"
+            style="
+              position: relative;
+              left: 100px;
+              top: 100px;
+              width: 300px;
+              height: 500px;
+              margin: 30px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/png09.png"
+            style="
+              position: relative;
+              left: 1000px;
+              top: 0px;
+              width: 500px;
+              height: 500px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <h6
+        style="
+          color: rgba(244, 245, 243, 0.5);
+          margin-top: 0px;
+          margin-left: 200px;
+          font-size: 200%;
+          text-align: left;
+        "
+      >
+        무엇과 무엇의 사이
+      </h6>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image40.jpg"
+            style="
+              position: relative;
+              left: 700px;
+              top: 0px;
+              width: 1000px;
+              height: 800px;
+              margin: 50px;
+            "
+          />
+        </p>
+      </div>
+    </div>
+    <!--5번째 단락 시작-->
+    <div
+      class="backGif"
+      style="
+        background-image: url('images/image52.jpg');
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+        display: inline-block;
+      "
+    >
+      <div
+        style="visibility: hidden"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image50.jpg"
+            style="
+              position: relative;
+              left: 340px;
+              top: 0px;
+              width: 500px;
+              height: 800px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/png11.png"
+            style="
+              position: relative;
+              left: 700px;
+              top: 0px;
+              width: 600px;
+              height: 600px;
+              margin: 0px;
+            "
+          />
+        </p>
+        <p>
+          <img
+            src="images/png10.png"
+            style="
+              position: relative;
+              left: 500px;
+              top: 0px;
+              width: 600px;
+              height: 600px;
+              margin: 0px;
+            "
+          />
+        </p>
+        <p>
+          <img
+            src="images/png11.png"
+            style="
+              position: relative;
+              left: 50px;
+              top: 0px;
+              width: 600px;
+              height: 600px;
+              margin: 0px;
+            "
+          />
+        </p>
+      </div>
+    </div>
+    <!--6번째 단락 시작-->
+    <div
+      class="backGif"
+      style="
+        background-image: url('images/image50.jpg');
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+        display: inline-block;
+      "
+    >
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/image53.jpg"
+            style="
+              position: relative;
+              left: 600px;
+              top: 0px;
+              width: 800px;
+              height: 500px;
+              margin: 50px;
+            "
+          />
+        </p>
+      </div>
+      <h6
+        style="
+          color: rgba(244, 245, 243, 0.5);
+          margin-top: 10px;
+          margin-right: 200px;
+          font-size: 200%;
+          text-align: right;
+        "
+      >
+        여전히 뒤에 남겨진
+      </h6>
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/png08.png"
+            style="
+              position: relative;
+              left: 80px;
+              top: 0px;
+              width: 1000px;
+              height: 1200px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+
+      <div
+        style="display: inline-block"
+        class="draggable"
+        class="ui-widget-content"
+        style="align-content: center"
+      >
+        <p>
+          <img
+            src="images/png07.png"
+            style="
+              position: relative;
+              left: 80px;
+              top: 0px;
+              width: 1200px;
+              height: 900px;
+              margin: 10px;
+            "
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
