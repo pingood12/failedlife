@@ -15,10 +15,11 @@
       type="text/javascript"
       src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"
     ></script>
-    <script>
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
-    </script>
+    <script
+      type = "text/javascript";
+      src =
+        "https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js";
+    ></script>
     <script
       type="text/javascript"
       src="https://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"
@@ -29,6 +30,19 @@
       });
       $(function () {
         $(".draggableText").draggable({ handle: "#handle" });
+      });
+      $(".image-popup-no-margins").magnificPopup({
+        type: "image",
+        closeOnContentClick: true,
+        closeBtnInside: true,
+        fixedContentPos: false,
+        mainClass: "mfp-no-margins mfp-with-zoom", // class to remove default margin from left and right side
+        image: {
+          verticalFit: true,
+        },
+        zoom: {
+          enabled: false,
+        },
       });
     </script>
     <style>
@@ -131,6 +145,7 @@
       <h6
         style="
           color: rgba(237, 243, 222, 0.5);
+          width: 80;
           margin-top: 70px;
           margin-right: 500px;
           font-size: 100%;
@@ -147,10 +162,10 @@
       <!--첫번째 단락 시작-->
       <!--택스트 박스 시작-->
       <div
-        style="display: inline-block; "
+        style="display: inline-block"
         class="draggableText"
         class="ui-widget-content"
-        style="margin-top: 0%;"
+        style="margin-top: 0%"
       >
         <p
           id="handle"
@@ -166,7 +181,7 @@
           "
         >
           아무것도 없는 것을 향해
-        </p>
+        </p></a>
         <p>
           <textarea
             rows="10"
@@ -181,31 +196,10 @@
               margin: 0px;
             "
           ></textarea>
-        </p>
+        </p></a>
       </div>
       <!--택스트 박스 끝-->
       <!--드래그 할 수있는 이미지 시작 -->
-        <div>
-        <p
-          style="display: block"
-          class="draggable"
-          class="ui-widget-content"
-          style="align-content: center"
-        >
-          <img
-            src="images/png06.png"
-            style="
-              position: relative;
-              left: 10%;
-              top: 0px;
-              width: 85%;
-              height: auto;
-              margin: 0px;
-            "
-          />
-          </p>
-        </div>
-      
       <div>
         <p
           style="display: block"
@@ -213,7 +207,31 @@
           class="ui-widget-content"
           style="align-content: center"
         >
-          <img
+          <a href="images/png06.png" "="" class="image-popup-no-margins"
+            ><img
+              src="images/png06.png"
+              style="
+                position: relative;
+                left: 10%;
+                top: 0px;
+                width: 85%;
+                height: auto;
+                margin: 0px;
+              "
+              alt=""
+          /></a>
+        </p></a>
+      </div>
+
+      <div>
+        <p
+          style="display: block"
+          class="draggable"
+          class="ui-widget-content"
+          style="align-content: center"
+        >
+ <a href="images/image11.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image11.jpg"
             style="
               position: relative;
@@ -224,7 +242,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
 
         <p
           style="display: block"
@@ -232,7 +250,8 @@
           class="ui-widget-content"
           style="align-content: center"
         >
-          <img
+ <a href="images/image12.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image12.jpg"
             style="
               position: relative;
@@ -243,7 +262,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
 
         <p
           style="display: block"
@@ -251,7 +270,8 @@
           class="ui-widget-content"
           style="align-content: center"
         >
-          <img
+ <a href="images/png02.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png02.png"
             style="
               position: relative;
@@ -262,7 +282,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -270,8 +290,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image14.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image14.jpg"
             style="
               position: relative;
@@ -282,7 +302,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
 
       <!--드래그 할 수있는 이미지 끝-->
@@ -304,7 +324,7 @@
           >
             <source src="videos/video01.mp4" type="video/mp4" />
           </video>
-        </p>
+        </p></a>
       </div>
       <!--드래그 할 수 있는 비디오 끝-->
     </div>
@@ -327,8 +347,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image20.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image20.jpg"
             style="
               position: relative;
@@ -339,13 +359,13 @@
               margin: 5%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
-        style="display: block "
+        style="display: block"
         class="draggable"
         class="ui-widget-content"
-        style="align-content: center;"
+        style="align-content: center"
       >
         <p>
           <video
@@ -362,7 +382,7 @@
           >
             <source src="videos/video02.mp4" type="video/mp4" />
           </video>
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -370,8 +390,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image21.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image21.jpg"
             style="
               position: relative;
@@ -382,7 +402,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
     </div>
     <div
@@ -412,8 +432,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image22.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image22.jpg"
             style="
               position: relative;
@@ -424,7 +444,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -432,8 +452,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image23.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image23.jpg"
             style="
               position: relative;
@@ -444,7 +464,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -452,8 +472,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image24.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image24.jpg"
             style="
               position: relative;
@@ -464,10 +484,10 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
 
-        <p>
-          <img
+ <a href="images/png01.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png01.png"
             style="
               position: relative;
@@ -478,7 +498,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
     </div>
     <!--3번째 단락 시작-->
@@ -510,8 +530,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/png12.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png12.png"
             style="
               position: relative;
@@ -522,7 +542,7 @@
               margin-top: 10%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -530,8 +550,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image32.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image32.jpg"
             style="
               position: relative;
@@ -542,7 +562,7 @@
               margin-top: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
 
       <div
@@ -551,8 +571,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image34.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image34.jpg"
             style="
               position: relative;
@@ -563,10 +583,10 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
 
-        <p>
-          <img
+ <a href="images/image34.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image34.jpg"
             style="
               position: relative;
@@ -577,7 +597,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -585,8 +605,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/png03.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png03.png"
             style="
               position: relative;
@@ -597,7 +617,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -605,8 +625,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image33.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image33.jpg"
             style="
               position: relative;
@@ -617,7 +637,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
     </div>
 
@@ -638,8 +658,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image41.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image41.jpg"
             style="
               position: relative;
@@ -650,7 +670,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -658,8 +678,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/png09.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png09.png"
             style="
               position: relative;
@@ -670,7 +690,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -678,8 +698,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image43.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image43.jpg"
             style="
               position: relative;
@@ -690,7 +710,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -698,8 +718,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image44.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image44.jpg"
             style="
               position: relative;
@@ -710,7 +730,7 @@
               margin: 3%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -718,8 +738,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/png09.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png09.png"
             style="
               position: relative;
@@ -730,7 +750,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <h6
         style="
@@ -749,8 +769,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image40.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image40.jpg"
             style="
               position: relative;
@@ -761,7 +781,7 @@
               margin: 5%;
             "
           />
-        </p>
+        </p></a>
       </div>
     </div>
     <!--5번째 단락 시작-->
@@ -781,8 +801,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image50.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image50.jpg"
             style="
               position: relative;
@@ -793,7 +813,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <div
         style="display: block"
@@ -801,8 +821,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/png11.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png11.png"
             style="
               position: relative;
@@ -813,9 +833,9 @@
               margin: 2%;
             "
           />
-        </p>
-        <p>
-          <img
+        </p></a>
+        <p><a href="images/png10.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png10.png"
             style="
               position: relative;
@@ -826,9 +846,9 @@
               margin: 2%;
             "
           />
-        </p>
-        <p>
-          <img
+        </p></a>
+        <p><a href="images/png11.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png11.png"
             style="
               position: relative;
@@ -839,7 +859,7 @@
               margin: 2%;
             "
           />
-        </p>
+        </p></a>
       </div>
     </div>
     <!--6번째 단락 시작-->
@@ -859,8 +879,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/image53.jpg" "="" class="image-popup-no-margins"
+            ><img
             src="images/image53.jpg"
             style="
               position: relative;
@@ -871,7 +891,7 @@
               margin: 5%;
             "
           />
-        </p>
+        </p></a>
       </div>
       <h6
         style="
@@ -890,8 +910,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/png08.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png08.png"
             style="
               position: relative;
@@ -902,7 +922,7 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
 
       <div
@@ -911,8 +931,8 @@
         class="ui-widget-content"
         style="align-content: center"
       >
-        <p>
-          <img
+        <a href="images/png07.png" "="" class="image-popup-no-margins"
+            ><img
             src="images/png07.png"
             style="
               position: relative;
@@ -923,36 +943,8 @@
               margin: 0%;
             "
           />
-        </p>
+        </p></a>
       </div>
     </div>
   </body>
-  <script>
-    $(function () {
-    var currentObj;
-    $( ".draggable" ).draggable({
-        // "axis": "x" ,//가로로만 이동
-        start:function(event, ui ) {
-        currentObj = $(".ui-draggable-dragging");
-    },
-    containment:"body"//이 영역 안에서만 이동 
-    });
-    $( "#droppable" ).droppable({
-        
-      drop: function( event, ui ) {
-          //영역안으로 드롭 했을때
-        var uiClass = currentObj.attr("class");
-        if(uiClass.indexOf('drag1') != -1){
-           console.log("drag1!!");
-          $( ".drag1" ).draggable("destroy");
-          
-        }else if(uiClass.indexOf('drag2') != -1){
-            console.log("drag2!!");
-        }else if(uiClass.indexOf('drag3') != -1){
-            console.log("drag3!!");
-         } 
-      }
-    });
-});
-  </script>
 </html>
