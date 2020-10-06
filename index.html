@@ -26,10 +26,11 @@
     ></script>
     <script>
       $(function () {
-        $(".draggable").draggable();
+        $(".draggable").draggable(
+              {containment:"body"});
       });
       $(function () {
-        $(".draggableText").draggable({ handle: "#handle" });
+        $(".draggableText").draggable({ handle: "#handle" ,containment:"body"});
       });
       $(".image-popup-no-margins").magnificPopup({
         type: "image",
@@ -202,13 +203,18 @@
       <!--드래그 할 수있는 이미지 시작 -->
       <div>
         <p
-          style="display: block"
+          style="display: inline-block"
           class="draggable"
           class="ui-widget-content"
           style="align-content: center"
         >
-          <a href="images/png06.png" "="" class="image-popup-no-margins"
-            ><img
+        
+        <!--<a href="images/png06.png" "="" class="image-popup-no-margins">
+          여기에 이미지 태그를 넣으면 이미지가 크집니다
+        </a>-->
+
+          <a href="images/png06.png" "="" class="image-popup-no-margins">
+            <img
               src="images/png06.png"
               style="
                 position: relative;
@@ -219,7 +225,8 @@
                 margin: 0px;
               "
               alt=""
-          /></a>
+          />
+        </a>
         </p></a>
       </div>
 
